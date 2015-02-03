@@ -1,0 +1,57 @@
+.cu_ch3_clickable_guide_key{
+	padding-left: 0;
+}
+.cu_ch3_image_container{
+	width: 24%;
+	display: block;
+	float: left;
+	list-style-type: none;
+	margin-right: 1%;
+}
+
+.cu_ch3_image_container img{
+	width: 100%;
+	display: block;
+}
+
+.cu_ch3_key_container{
+	display: block;
+	padding: 10px 2px;
+}
+
+.cu_ch3_square{
+	padding: 2px 10px;
+	margin-right: 5px;
+}
+
+.cu_ch3--buster{
+	background-color: #87c2c2;
+}
+
+.cu_ch3--jasper{
+	background-color: #007f7f;
+}
+
+.cu_ch3--miss_piggy{
+	background-color:  #e78787;
+}
+
+.cu_ch3--pookie{
+	background-color: #981915;
+}
+
+@include respondMinMax(false, 600px){
+	.cu_ch3_image_container{
+		width: 48%;
+	}
+}
+
+@include respondMinMax(false, 350px){
+	.cu_ch3_catsname_text{
+		font-size: 68%;
+	}
+	.cu_ch3_square{
+		padding: 1px 8px;
+	}
+}
+

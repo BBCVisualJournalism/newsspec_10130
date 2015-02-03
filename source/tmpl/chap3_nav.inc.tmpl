@@ -1,0 +1,25 @@
+<script>
+	document.body.className += ' full-width-mode';
+</script>
+<style>
+	/*added to fix the cross head header sticking to the line above it on the parent page */
+	span.cross-head{
+		padding-top: 18px;
+	}
+</style>
+<%
+    iframeUid = "responsive-iframe-" + Math.floor(Math.random() * 100000000);
+%>
+<div>
+    <a href="<%= path %>/<%= vocab_dir %>/chap3_nav.html?v=<%= version %>" id="<%= iframeUid %>" data-static-iframe-height="600">Navigation bar</a>
+</div>
+<%
+if (!scaffoldLite) {
+%>
+    <style>
+    <%= include("../scss/news_special/loading.css") %>
+    </style>
+<%
+}
+%>
+<script type="text/javascript"><%= include(debug === 'true' ? "../js/lib/news_special/iframemanager__host.js" : "../../tmp/iframemanager__host.js", {iframeUid: iframeUid, scaffoldLite: scaffoldLite}) %></script>

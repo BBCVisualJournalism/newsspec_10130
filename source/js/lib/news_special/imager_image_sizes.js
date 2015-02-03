@@ -1,0 +1,1 @@
+define(function () {return [304, 482, 704, 976]; });

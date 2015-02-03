@@ -1,0 +1,12 @@
+{
+  "debug":          "false",
+  "whichEnv":       "local",
+  "scaffoldLite":   "false",
+  "project_number": "10130",
+  "year":           "2015",
+  "imageWidths":    ["304", "482", "704", "976"],
+  "services": {
+    "default": "english",
+    "others":  "*"
+  }
+}

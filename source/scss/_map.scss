@@ -1,0 +1,19 @@
+.cu_ch2_gps-images{
+	padding-left: 0;
+}
+
+.cu_ch2_gps-images{
+	list-style-type: none;
+	background-image: none;
+}
+.cu_ch2_gps-image_container{
+	display: inline-block;
+	width: 49%;
+}
+
+@include respondMinMax( false, 624px) {
+	.cu_ch2_gps-image_container {
+		display: block;
+		width: 98%;
+	}
+}

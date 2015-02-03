@@ -1,0 +1,52 @@
+$defaultColor:   rgb(158, 154, 154);
+$highlightColor: #007f7f;
+
+.cu-navigation{
+    width: 100%;
+    border-top: 1px solid $defaultColor;
+    clear: both;
+}
+.cu-navigation__item {
+    display: inline-block;
+    width: 30%;
+    list-style-type: none;
+    text-align: center;
+    border-bottom: 3px solid $defaultColor;
+    background-image: none;
+    margin: auto;
+}
+
+.cu-navigation__item__link {
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    padding: 16px 0;
+    color: $defaultColor;
+}
+
+.cu-navigation__item:hover, .disabled{
+    border-color: $highlightColor;
+    .cu-navigation__item__link {
+        color: $highlightColor;
+        font-weight: bold;
+    }
+}
+
+.disabled{
+    .cu-navigation__item__link{
+        pointer-events: none;
+        cursor: default;
+    }
+}
+
+@include respondMinMax(290px, 716px){
+    .cu-navigation__line-break{
+        display: block;
+    }
+}
+
+@include respondMinMax( false, 460px){
+    .cu-navigation__item{
+        font-size: 70%;
+    }
+}

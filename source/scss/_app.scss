@@ -1,0 +1,11 @@
+/* separate your sass into different files to keep it maintainable!  */
+.main {
+    img {
+        width: 100%;
+    }
+}
+
+@import "nav";
+@import "chap2_family_tree";
+@import "map";
+@import "chap3_home_sharing";
